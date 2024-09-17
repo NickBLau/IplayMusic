@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-bold text-transparent text-5xl bg-clip-text inline-block bg-gradient-to-r from-orange to-primarycolor py-12;
+  }
+}
+
+:root {
+  --font-family: "Poppins", sans-serif;
+  --text-color: secondary-color; /* Default text color for light mode */
+  --background-color: #fff; /* Default background color for light mode */
+}
+
+.dark-mode :root {
+  --text-color: #fff; /* Text color for dark mode */
+  --background-color: primarycolor; /* Background color for dark mode */
+}
+
+/* Additional styles for dark mode using 'dark' utility class */
+.dark-mode {
+  --text-color: white;
+  --background-color: #111625;
+}
+.react-icons {
+  color: white;
+}
+
+.VerticalMovieListContainer {
+  padding: 0 0 100px;
+}
+.dark-mode .react-icons {
+  color: white;
+}
+
+li {
+  padding-bottom: 25px;
+  padding: 12px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="EE0979" />
+    <title>iPlayMusic</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/src/icons/android-launchericon-512-512.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="index.js"></script>
+
+    <link rel="manifest" href="manifest.json" />
+    <link
+      rel="apple-touch-icon"
+      href="/src/icons/android-launchericon-192-192.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --font-family: "Poppins", sans-serif;
+        --text-color: secondary-color;
+        --background-color: #fff;
+      }
+
+      body {
+        font-family: var(--font-family);
+        color: var(--text-color);
+        background-color: var(--background-color);
+      }
+    </style>
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+  </body>
+</html>
